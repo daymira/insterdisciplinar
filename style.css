@@ -1,0 +1,56 @@
+form {
+  background: rgba(95, 92, 92, 0.33);
+  width: 100%;
+  max-width: 500px;
+  margin: 32px auto;
+  padding: 32px 64px;
+  display: flex;
+  flex-direction: column;
+}
+
+form h1 {
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+div.input {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+input {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+
+  /* box */
+  width: 100%;
+  padding: 10px 0;
+  border: none;
+  border-bottom: 1px solid black;
+  background-color: transparent;
+  outline: none;
+
+  color: black;
+  font-size: 1em;
+}
+
+button {
+  margin-top: 20px;
+  width: 100;
+  padding: 10px;
+}
+input ~ label {
+  position: absolute;
+  top: 16px;
+  left: 0;
+  color: black;
+  transition: 0.4s;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+  transform: translateY(-24px);
+  font-size: 0.8em;
+  letter-spacing: 0.1em;
+}
